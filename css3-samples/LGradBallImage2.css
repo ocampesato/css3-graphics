@@ -1,0 +1,78 @@
+#outer {
+position: relative; top: 10px; left: 0px;
+}
+
+#linear1 {
+font-size: 24px;
+width:  500px;
+height: 250px;
+position: relative; top: 0px; left: 0px;
+
+-webkit-border-image: url(ball.png) 2 2 2 2 repeat repeat;
+border-image: url(ball.png)         2 2 2 2 repeat repeat;
+
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#fff), to(#f00));
+background-image: -gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#fff), to(#f00));
+
+-webkit-border-radius: 4px;
+border-radius: 4px;
+}
+
+#linear2 {
+opacity: 0.5;
+font-size: 24px;
+width:  400px;
+height: 250px;
+position: absolute; top: 0px; left: 400px;
+
+-webkit-border-image: url(ball.png) 2 2 2 2 repeat round;
+border-image: url(ball.png)         2 2 2 2 repeat round;
+
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#f00), to(#00f));
+background-image: -gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#f00), to(#00f));
+-webkit-border-radius: 4px;
+border-radius: 4px;
+}
+
+#linear3 {
+opacity: 0.5;
+font-size: 24px;
+width:  400px;
+height: 250px;
+
+position: absolute; top: 250px; left: 0px;
+
+-webkit-border-image: url(ball.png) 2 2 2 2 round repeat;
+border-image: url(ball.png)         2 2 2 2 round repeat;
+
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#f00), to(#00f));
+background-image: -gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#f00), to(#00f));
+-webkit-border-radius: 4px;
+border-radius: 4px;
+}
+
+#linear4 {
+opacity: 0.5;
+font-size: 24px;
+width:  400px;
+height: 250px;
+position: absolute; top: 250px; left: 400px;
+
+-webkit-border-image: url(ball.png) 2 2 2 2 round stretch;
+border-image: url(ball.png)         2 2 2 2 round stretch;
+
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#ff0), to(#00f));
+background-image: -gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#ff0), to(#00f));
+
+-webkit-border-radius: 4px;
+border-radius: 4px;
+}
+

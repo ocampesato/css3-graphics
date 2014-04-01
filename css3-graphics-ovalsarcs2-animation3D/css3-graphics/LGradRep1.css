@@ -1,0 +1,105 @@
+#outer {
+position: relative; top: 10px; left: 0px;
+}
+
+#linear1 {
+font-size: 24px;
+width:  400px;
+height: 250px;
+
+position: relative; top: 0px; left: 0px;
+
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#fff), to(#f00));
+background-image: -gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#fff), to(#f00));
+
+-webkit-background-size: 100% 33%;
+-webkit-border-top-right-radius: 100%;
+-webkit-border-bottom-right-radius: 100%;
+}
+
+#linear2 {
+font-size: 24px;
+width:  400px;
+height: 250px;
+position: absolute; top: 0px; left: 400px;
+
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#f00), to(#00f));
+background-image: -gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#f00), to(#00f));
+
+-webkit-background-size: 100% 50%;
+-webkit-border-top-right-radius: 100%;
+-webkit-border-bottom-right-radius: 100%;
+}
+
+#linear3 {
+font-size: 24px;
+width:  400px;
+height: 250px;
+
+position: absolute; top: 250px; left: 0px;
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#f00), to(#00f));
+background-image: -gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#f00), to(#00f));
+
+-webkit-background-size: 100% 25%;
+-webkit-border-top-right-radius: 100%;
+-webkit-border-bottom-right-radius: 100%;
+}
+
+#linear4 {
+font-size: 24px;
+width:  400px;
+height: 250px;
+position: absolute; top: 250px; left: 400px;
+
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#ff0), to(#00f));
+background-image: -gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#ff0), to(#00f));
+
+-webkit-background-size: 100% 33%;
+-webkit-border-top-right-radius: 100%;
+-webkit-border-bottom-right-radius: 100%;
+}
+
+#linear33 {
+font-size: 24px;
+width:  400px;
+height: 250px;
+
+position: absolute; top: 250px; left: 0px;
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#f00), to(#00f));
+background-image: -gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#f00), to(#00f));
+
+-webkit-background-size: 100% 25%;
+-webkit-border-top-right-radius: 100%;
+-webkit-border-bottom-right-radius: 100%;
+-webkit-transform : scale(0.5) rotate(45deg);
+-transform : scale(0.5) rotate(45deg);
+}
+
+#linear44 {
+font-size: 24px;
+width:  400px;
+height: 250px;
+position: absolute; top: 250px; left: 400px;
+
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#ff0), to(#00f));
+background-image: -gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#ff0), to(#00f));
+
+-webkit-background-size: 100% 33%;
+-webkit-border-top-right-radius: 100%;
+-webkit-border-bottom-right-radius: 100%;
+-webkit-transform : scale(0.5) rotate(45deg);
+-transform : scale(0.5) rotate(45deg);
+}
+

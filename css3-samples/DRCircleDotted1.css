@@ -1,0 +1,56 @@
+#outer {
+position: relative; top: 10px; left: 0px;
+}
+
+#radial1 {
+font-size: 24px;
+width:  250px;
+height: 250px;
+position: relative; top: 0px; left: 0px;
+
+background-color: #00f;
+-webkit-border-radius: 125px;
+border-radius:125px;
+border: 4px dotted #000;
+-webkit-box-shadow:  10px 10px 10px #000;
+}
+
+#radial2 {
+font-size: 24px;
+width:  250px;
+height: 250px;
+position: absolute; top: 0px; left: 250px;
+
+background-color: #f00;
+-webkit-border-radius: 125px;
+border-radius:125px;
+border: 4px dotted #000;
+-webkit-box-shadow:  10px 10px 10px #000;
+}
+
+#radial3 {
+font-size: 24px;
+width:  250px;
+height: 250px;
+position: relative; top: 0px; left: 0px;
+
+background-color: #f00;
+-webkit-border-radius: 125px;
+border-radius:125px;
+border: 4px dotted #000;
+-webkit-box-shadow:  10px 10px 10px #000;
+}
+
+#radial4 {
+font-size: 24px;
+width:  250px;
+height: 250px;
+position: absolute; top: 250px; left: 250px;
+
+background-color: #00f;
+-webkit-border-radius: 125px;
+border-radius:125px;
+border: 4px dotted #000;
+-webkit-box-shadow:  10px 10px 10px #000;
+}
+

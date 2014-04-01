@@ -1,0 +1,155 @@
+
+#outer {
+position: relative; top: 10px; left: 0px;
+}
+
+/* define animation effects */
+@-webkit-keyframes upperLeft {
+   0% {
+      -webkit-transform: translate(0px,0) rotate(-5deg) skew(-15deg,0);
+   }
+   50% {
+      -webkit-transform: translate(-100px,0) rotate(-15deg) skew(-25deg,0);
+   }
+   75% {
+      -webkit-transform: translate(-200px,0) rotate(-5deg) skew(-15deg,0);
+   }
+   100% {
+      -webkit-transform: translate(0px,0) rotate(0) skew(0,0);
+   }
+}
+
+@-webkit-keyframes lowerLeft {
+   0% {
+      -webkit-transform: translate(0px,0) rotate(5deg) skew(15deg,0);
+   }
+   50% {
+      -webkit-transform: translate(-100px,0) rotate(15deg) skew(25deg,0);
+   }
+   75% {
+      -webkit-transform: translate(-200px,0) rotate(5deg) skew(15deg,0);
+   }
+   100% {
+      -webkit-transform: translate(0px,0) rotate(0) skew(0,0);
+   }
+}
+
+@-webkit-keyframes upperRight {
+   0% {
+      -webkit-transform: translate(0px,0) rotate(5deg) skew(-15deg,0);
+   }
+   50% {
+      -webkit-transform: translate(100px,0) rotate(15deg) skew(-25deg,0);
+   }
+   75% {
+      -webkit-transform: translate(200px,0) rotate(5deg) skew(-15deg,0);
+   }
+   100% {
+      -webkit-transform: translate(0px,0) rotate(0) skew(0,0);
+   }
+}
+ 
+@-webkit-keyframes lowerRight {
+   0% {
+      -webkit-transform: translate(0px,0) rotate(-5deg) skew(15deg,0);
+   }
+   50% {
+      -webkit-transform: translate(100px,0) rotate(-15deg) skew(25deg,0);
+   }
+   75% {
+      -webkit-transform: translate(200px,0) rotate(-5deg) skew(15deg,0);
+   }
+   100% {
+      -webkit-transform: translate(0px,0) rotate(0) skew(0,0);
+   }
+}
+
+#linear1 {
+font-size: 24px;
+width:  400px;
+height: 250px;
+
+position: relative; top: 0px; left: 0px; 
+
+background-color:white;
+background-image:
+  -webkit-radial-gradient(red 4px, transparent 8px), 
+  -webkit-repeating-radial-gradient(red 2px,  green 4px, yellow 8px, blue 12px, transparent 16px, 
+                                    red 20px, blue 24px, transparent 28px, transparent 32px),
+  -webkit-repeating-radial-gradient(red 4px,  green 6px, yellow 8px, blue 12px, transparent 16px, 
+                                    red 20px, blue 24px, transparent 28px, transparent 32px);    
+background-size: 30px 30px, 60px 60px; 
+background-position: 0 0;
+-webkit-animation-name: upperLeft;
+-webkit-animation-duration: 6s;
+}
+
+#linear2 {
+font-size: 24px;
+width:  400px;
+height: 250px;
+position: absolute; top: 0px; left: 400px;
+
+background-color:white;
+background-image:
+  -webkit-radial-gradient(red 4px, transparent 8px), 
+  -webkit-repeating-radial-gradient(red 4px,  green 6px, yellow 8px, blue 12px, transparent 16px, 
+                                    green 20px, red 24px, transparent 28px, transparent 32px),
+  -webkit-repeating-radial-gradient(red 4px,  green 6px, yellow 8px, blue 12px, transparent 16px, 
+                                    green 20px, red 24px, transparent 28px, transparent 32px);    
+background-size: 30px 60px, 30px 90px; 
+background-position: 0 0;
+
+resize:both;
+overflow:auto;
+-webkit-animation-name: upperRight;
+-webkit-animation-duration: 6s;
+}
+
+#linear3 {
+font-size: 24px;
+width:  400px;
+height: 250px;
+
+position: absolute; top: 250px; left: 0px;
+
+background-color:white;
+background-image:
+  -webkit-radial-gradient(red 4px, transparent 8px), 
+  -webkit-repeating-radial-gradient(red 6px,  green 4px, yellow 8px, blue 12px, transparent 16px, 
+                                    green 20px, red 24px, transparent 28px, transparent 32px),
+  -webkit-repeating-radial-gradient(red 6px,  green 4px, yellow 8px, blue 12px, transparent 16px, 
+                                    green 20px, red 24px, transparent 28px, transparent 32px);    
+background-size: 30px 60px, 30px 10px; 
+background-position: 0 0;
+
+resize:both;
+overflow:auto;
+-webkit-animation-name: lowerLeft;
+-webkit-animation-duration: 6s;
+}
+
+#linear4 {
+font-size: 24px;
+width:  400px;
+height: 250px;
+position: absolute; top: 250px; left: 400px;
+
+background-color:white;
+background-image:
+  -webkit-radial-gradient(red 4px, transparent 8px), 
+  -webkit-repeating-radial-gradient(red 4px,  yellow 6px, green 8px, red 12px, transparent 16px, 
+                                    blue 20px, red 24px, transparent 18px, blue 12px),
+  -webkit-repeating-radial-gradient(red 5px,  yellow 6px, green 8px, red 12px, transparent 16px, 
+                                    blue 20px, red 24px, transparent 18px, blue 12px);    
+background-size: 10px 60px, 10px 10px; 
+background-position: 0 0;
+
+-webkit-border-radius: 4px;
+border-radius: 4px;
+resize:both;
+overflow:auto;
+-webkit-animation-name: lowerRight;
+-webkit-animation-duration: 6s;
+}
+

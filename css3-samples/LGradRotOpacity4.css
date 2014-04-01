@@ -1,0 +1,112 @@
+#outer {
+position: relative; top: 10px; left: 0px;
+}
+
+#linear1 {
+opacity: 0.5;
+font-size: 24px;
+width:  400px;
+height: 250px;
+
+position: relative; top: 0px; left: 0px;
+
+background-image: -webkit-gradient(linear, 100% 50%, 0% 100%, 
+                                   from(#f00), 
+                                   color-stop(0.2, orange), 
+                                   color-stop(0.4, yellow), 
+                                   color-stop(0.6, blue),
+                                   color-stop(0.8, green), 
+                                   to(#00f));
+
+background-image: -gradient(linear, 100% 50%, 0% 100%, 
+                            from(#f00), 
+                            color-stop(0.2, orange), 
+                            color-stop(0.4, yellow), 
+                            color-stop(0.6, blue),
+                            color-stop(0.8, green), 
+                                   to(#00f));
+
+-webkit-transform : scale(2) rotate(-45deg);
+-transform : scale(2) rotate(-45deg);
+-webkit-border-radius: 4px;
+border-radius: 4px;
+-webkit-box-shadow:  30px 30px 30px #000;
+}
+
+#linear2 {
+opacity: 0.5;
+font-size: 24px;
+width:  400px;
+height: 250px;
+position: absolute; top: 0px; left: 400px;
+
+background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, 
+                                   from(#f00), 
+                                   color-stop(0.4, yellow), 
+                                   to(#00f));
+
+background-image: -gradient(linear, 0% 50%, 100% 50%, 
+                                   from(#f00), 
+                                   color-stop(0.4, yellow), 
+                                   to(#00f));
+
+-webkit-transform : scale(1.5) rotate(-25deg);
+-transform : scale(1.5) rotate(-25deg);
+-webkit-border-radius: 4px;
+border-radius: 4px;
+-webkit-box-shadow:  30px 30px 30px #000;
+}
+
+#linear3 {
+opacity: 0.5;
+font-size: 24px;
+width:  400px;
+height: 250px;
+position: absolute; top: 250px; left: 0px;
+
+background-image: -webkit-gradient(linear, 100% 0%, 0% 100%, 
+                                   from(#f00), 
+                                   color-stop(0.6, green), 
+                                   color-stop(0.8, blue),
+                                   to(#00f));
+
+background-image: -gradient(linear, 100% 0%, 0% 100%, 
+                                   from(#f00), 
+                                   color-stop(0.6, green), 
+                                   color-stop(0.8, blue),
+                                   to(#00f));
+
+-webkit-border-radius: 4px;
+border-radius: 4px;
+-webkit-box-shadow:  30px 30px 30px #000;
+}
+
+#linear4 {
+opacity: 0.5;
+font-size: 24px;
+width:  400px;
+height: 250px;
+position: absolute; top: 250px; left: 400px;
+
+background-image: -webkit-gradient(linear, 0% 100%, 100% 0%, 
+                                   from(#f00), 
+                                   color-stop(0.2, orange), 
+                                   color-stop(0.4, yellow), 
+                                   color-stop(0.6, green), 
+                                   color-stop(0.8, blue),
+                                   to(#00f));
+
+background-image: -gradient(linear, 0% 100%, 100% 0%, 
+                            from(#f00), 
+                            color-stop(0.2, orange), 
+                            color-stop(0.4, yellow), 
+                            color-stop(0.6, green), 
+                            color-stop(0.8, blue),
+                            to(#fff));
+
+-webkit-border-radius: 4px;
+border-radius: 4px;
+
+-webkit-box-shadow:  30px 30px 30px #000;
+}
+

@@ -1,0 +1,48 @@
+#line1 {
+font-size: 24px;
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#f00));
+background-image: -gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#f00));
+-webkit-border-radius: 4px;
+border-radius: 4px;
+}
+
+#line2 {
+font-size: 24px;
+background-image: -webkit-gradient(linear, 100% 0%, 0% 100%, from(#fff), to(#0f0));
+background-image: -gradient(linear, 100% 0%, 0% 100%, from(#fff), to(#0f0));
+-webkit-border-radius: 4px;
+border-radius: 4px;
+}
+
+#line3 {
+font-size: 24px;
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f00), to(#00f));
+background-image: -gradient(linear, 0% 0%, 0% 100%, from(#f00), to(#00f));
+-webkit-border-radius: 4px;
+border-radius: 4px;
+}
+
+#line4 {
+font-size: 24px;
+background-image: -webkit-gradient(linear, 100% 0%, 0% 100%, from(#f00), to(#00f));
+background-image: -gradient(linear, 100% 0%, 0% 100%, from(#f00), to(#00f));
+-webkit-border-radius: 4px;
+border-radius: 4px;
+}
+
+#line5 {
+font-size: 24px;
+background-image: -webkit-linear-gradient(top, #f00, #00f);
+background-image: -linear-gradient(top, #f00, #00f);
+-webkit-border-radius: 4px;
+border-radius: 4px;
+}
+
+#line6 {
+font-size: 24px;
+background-image: -webkit-linear-gradient(top, #f00, #00f 50%, #fff);
+background-image: -linear-gradient(top, #f00, #00f 50%, #fff);
+-webkit-border-radius: 4px;
+border-radius: 4px;
+}
+

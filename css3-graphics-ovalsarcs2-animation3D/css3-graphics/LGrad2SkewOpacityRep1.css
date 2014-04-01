@@ -1,0 +1,123 @@
+#outer {
+position: relative; top: 10px; left: 0px;
+}
+
+#linear1 {
+opacity: 0.9;
+font-size: 24px;
+width:  800px;
+height: 500px;
+
+position: relative; top: 0px; left: 0px;
+
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#fff), to(#f00));
+background-image: -gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#fff), to(#f00));
+
+-webkit-transform : scale(2) skew(-10deg, -30deg);
+-transform : scale(2) skew(-10deg, -30deg);
+-webkit-background-size: 100% 33%;
+-webkit-border-top-right-radius: 100%;
+-webkit-border-bottom-right-radius: 100%;
+}
+
+#linear2 {
+opacity: 0.5;
+font-size: 24px;
+width:  400px;
+height: 250px;
+position: absolute; top: 0px; left: 400px;
+
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#f00), to(#00f));
+background-image: -gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#f00), to(#00f));
+
+-webkit-transform : scale(1.5) skew(20deg, 30deg);
+-transform : scale(1.5) skew(30deg, 30deg);
+-webkit-background-size: 100% 50%;
+-webkit-border-top-right-radius: 100%;
+-webkit-border-bottom-right-radius: 100%;
+}
+
+#linear3 {
+opacity: 0.5;
+font-size: 24px;
+width:  400px;
+height: 250px;
+
+position: absolute; top: 250px; left: 0px;
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#f00), to(#00f));
+background-image: -gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#f00), to(#00f));
+
+-webkit-transform : scale(2.5) skew(-20deg, -30deg);
+-transform : scale(2.5) skew(-20deg, -30deg);
+border-radius: 4px;
+-webkit-border-top-right-radius: 100%;
+-webkit-border-bottom-right-radius: 100%;
+}
+
+#linear4 {
+opacity: 0.5;
+font-size: 24px;
+width:  400px;
+height: 250px;
+position: absolute; top: 250px; left: 400px;
+
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#ff0), to(#00f));
+background-image: -gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#ff0), to(#00f));
+
+-webkit-transform : scale(1.5) skew(40deg, 30deg);
+-transform : scale(1.5) skew(40deg, 30deg);
+border-radius: 4px;
+-webkit-border-top-right-radius: 100%;
+-webkit-border-bottom-right-radius: 100%;
+}
+
+#linear33 {
+opacity: 0.5;
+font-size: 24px;
+width:  400px;
+height: 250px;
+
+position: absolute; top: 250px; left: 0px;
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#f00), to(#00f));
+background-image: -gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#f00), to(#00f));
+
+-webkit-transform : scale(2.5) skew(-20deg, -30deg);
+-transform : scale(2.5) skew(-20deg, -30deg);
+border-radius: 4px;
+-webkit-border-top-right-radius: 100%;
+-webkit-border-bottom-right-radius: 100%;
+-webkit-transform : scale(0.5) rotate(45deg);
+-transform : scale(0.5) rotate(45deg);
+}
+
+#linear44 {
+opacity: 0.5;
+font-size: 24px;
+width:  400px;
+height: 250px;
+position: absolute; top: 250px; left: 400px;
+
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#ff0), to(#00f));
+background-image: -gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#ff0), to(#00f));
+
+-webkit-transform : scale(1.5) skew(40deg, 30deg);
+-transform : scale(1.5) skew(40deg, 30deg);
+border-radius: 4px;
+-webkit-border-top-right-radius: 100%;
+-webkit-border-bottom-right-radius: 100%;
+-webkit-transform : scale(0.5) rotate(45deg);
+-transform : scale(0.5) rotate(45deg);
+}
+

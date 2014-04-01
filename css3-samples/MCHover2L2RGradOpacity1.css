@@ -1,0 +1,124 @@
+#outer {
+position: relative; top: 10px; left: 0px;
+}
+
+#columns {
+position: absolute; top: 10px; left: 0px;
+-webkit-column-count : 3;
+-webkit-column-gap : 80px;
+-webkit-column-rule : 1px solid rgb(255,255,255);
+-moz-column-count : 3;
+-moz-column-gap : 80px;
+-moz-column-rule : 1px solid rgb(255,255,255);
+column-count : 3;
+column-gap : 80px;
+column-rule : 1px solid rgb(255,255,255);
+}
+
+#radial1 {
+opacity: 0.5;
+font-size: 24px;
+width:  400px;
+height: 160px;
+position: relative; top: 0px; left: 0px;
+
+background: -webkit-gradient(
+  radial, 100 25%, 20, 100 25%, 40, from(blue), to(#fff)
+ );
+}
+
+#radial2 {
+opacity: 0.5;
+font-size: 24px;
+width:  400px;
+height: 160px;
+position: absolute; top: 0px; left: 400px;
+
+background: -webkit-gradient(
+  radial, 100 25%, 20, 150 25%, 40, from(red), to(#fff)
+ );
+}
+
+#radial3 {
+opacity: 0.5;
+font-size: 24px;
+width:  400px;
+height: 160px;
+position: relative; top: 0px; left: 0px;
+
+background: -webkit-gradient(
+  radial, 100 25%, 30, 100 25%, 20, from(yellow), to(#fff)
+ );
+-webkit-box-shadow:  0px 0px 8px #000;
+}
+
+#radial4 {
+opacity: 0.5;
+font-size: 24px;
+width:  400px;
+height: 160px;
+position: absolute; top: 160px; left: 400px;
+
+background: -webkit-gradient(
+  radial, 100 25%, 20, 100 25%, 40, from(green), 
+  color-stop(0.2, orange), color-stop(0.4, yellow), 
+  color-stop(0.6, green), color-stop(0.8, blue),
+  to(#fff)
+ );
+
+background-image: -webkit-gradient(linear, right top, left bottom, 
+                   from(yellow), 
+                   color-stop(25%, yellow), 
+                   color-stop(25%, red), 
+                   color-stop(50%, yellow),
+                   color-stop(50%, red), 
+                   color-stop(75%, yellow),
+                   color-stop(75%, red), 
+                   to(red));
+-webkit-background-size: 20px;
+}
+
+p {
+font-size: 18px;
+padding: 3px;
+color: #000;
+background: #ffffe6;
+border: 1px solid #ccc;
+-webkit-box-shadow: 5px 5px 5px #000000;
+-moz-box-shadow: 5px 5px 5px #000000;
+box-shadow: 5px 5px 5px #000000;
+}
+
+article:hover {
+-webkit-transition: all 2s ease-in-out;
+transition: all 2s ease-in-out;
+-webkit-transform-origin: bottom left;
+transform-origin: bottom left;
+-webkit-transform: scale(1.2);
+transform: scale(1.2);
+-webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+@-webkit-keyframes fadeGraphics {
+  0% {
+    opacity: 1.0;
+  }
+  25% {
+    opacity: 0.75;
+  }
+  50% {
+    opacity: 0.50;
+  }
+  75% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 0.0;
+  }
+}
+
+#radial1:hover, #radial2:hover, #radial3:hover, #radial4:hover {
+ -webkit-animation: fadeGraphics 2.0s 4 ease;
+}
+

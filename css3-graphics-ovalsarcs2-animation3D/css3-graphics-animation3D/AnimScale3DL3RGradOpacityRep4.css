@@ -1,0 +1,251 @@
+#outer {
+position: relative; top: 10px; left: 0px;
+}
+
+/* define animation effects */
+@-webkit-keyframes upperLeft {
+   0% {
+      -webkit-transform: translate3d(50px,50px,50px) rotate(-180deg) skew(-15deg,0) scale3d(0.25, 0.25, 0.25);
+   }
+   50% {
+      -webkit-transform: translate3d(0px,0px,0px) rotate(-60deg) skew(-15deg,0) scale3d(0.75, 0.75, 0.75);
+   }
+   75% {
+      -webkit-transform: translate3d(250px,250px,250px) rotate(-120deg) skew(-25deg,0) scale3d(0.5, 0.5, 0.5);
+   }
+   100% {
+      -webkit-transform: translate3d(0px,0px,0px) rotate(0) skew(0,0) scale3d(1.0, 1.0, 1.0);
+   }
+}
+
+@-webkit-keyframes lowerLeft {
+   0% {
+      -webkit-transform: translate3d(50px,50px,50px) rotate(-180deg) skew(-15deg,0) scale3d(0.25, 0.25, 0.25);
+   }
+   50% {
+      -webkit-transform: translate3d(0px,0px,0px) rotate(-60deg) skew(-15deg,0) scale3d(0.75, 0.75, 0.75);
+   }
+   75% {
+      -webkit-transform: translate3d(250px,250px,250px) rotate(-120deg) skew(-25deg,0) scale3d(0.5, 0.5, 0.5);
+   }
+   100% {
+      -webkit-transform: translate3d(0px,0px,0px) rotate(0) skew(0,0) scale3d(1.0, 1.0, 1.0);
+   }
+}
+
+@-webkit-keyframes upperRight {
+   0% {
+      -webkit-transform: translate3d(50px,50px,50px) rotate(-180deg) skew(-15deg,0) scale3d(0.25, 0.25, 0.25);
+   }
+   50% {
+      -webkit-transform: translate3d(0px,0px,0px) rotate(-60deg) skew(-15deg,0) scale3d(0.75, 0.75, 0.75);
+   }
+   75% {
+      -webkit-transform: translate3d(250px,250px,250px) rotate(-120deg) skew(-25deg,0) scale3d(0.5, 0.5, 0.5);
+   }
+   100% {
+      -webkit-transform: translate3d(0px,0px,0px) rotate(0) skew(0,0) scale3d(1.0, 1.0, 1.0);
+   }
+}
+ 
+@-webkit-keyframes lowerRight {
+   0% {
+      -webkit-transform: translate3d(50px,50px,50px) rotate(-180deg) skew(-15deg,0) scale3d(0.25, 0.25, 0.25);
+   }
+   50% {
+      -webkit-transform: translate3d(0px,0px,0px) rotate(-60deg) skew(-15deg,0) scale3d(0.75, 0.75, 0.75);
+   }
+   75% {
+      -webkit-transform: translate3d(250px,250px,250px) rotate(-120deg) skew(-25deg,0) scale3d(0.5, 0.5, 0.5);
+   }
+   100% {
+      -webkit-transform: translate3d(0px,0px,0px) rotate(0) skew(0,0) scale3d(1.0, 1.0, 1.0);
+   }
+}
+
+#radial1 {
+opacity: 0.5;
+font-size: 24px;
+width:  800px;
+height: 100px;
+position: absolute; top: 400px; left: 0px;
+
+background: -webkit-gradient(
+  radial, 400 25%, 20, 100 25%, 40, from(red), 
+  color-stop(0.05, orange), color-stop(0.4, yellow), 
+  color-stop(0.6, red), color-stop(0.9, blue),
+  to(#fff)
+ );
+-webkit-background-size: 100% 25%;
+-webkit-animation-name: upperLeft;
+-webkit-animation-duration: 6s;
+-webkit-border-top-right-radius: 80%;
+-webkit-border-bottom-left-radius: 80%;
+}
+
+#radial2 {
+opacity: 0.5;
+font-size: 24px;
+width:  400px;
+height: 500px;
+position: absolute; top: 0px; left: 400px;
+
+background: -webkit-gradient(
+  radial, 300 25%, 40, 100 25%, 20, from(red), 
+  color-stop(0.05, orange), color-stop(0.4, yellow), 
+  color-stop(0.6, red), color-stop(0.9, blue),
+  to(#fff)
+ );
+-webkit-background-size: 100% 33%;
+-webkit-animation-name: upperRight;
+-webkit-animation-duration: 6s;
+-webkit-border-top-right-radius: 80%;
+-webkit-border-bottom-left-radius: 80%;
+}
+
+#radial3 {
+opacity: 0.5;
+font-size: 24px;
+width:  800px;
+height: 600px;
+position: absolute; top: 0px; left: 0px;
+
+background: -webkit-gradient(
+  radial, 300 30%, 160, 250 25%, 80, from(red), 
+  color-stop(0.05, orange), color-stop(0.4, yellow), 
+  color-stop(0.6, green), color-stop(0.8, blue),
+  to(#fff)
+ );
+-webkit-background-size: 100% 25%;
+-webkit-box-shadow:  0px 0px 8px #000;
+-webkit-animation-name: lowerLeft;
+-webkit-animation-duration: 6s;
+-webkit-border-top-right-radius: 80%;
+-webkit-border-bottom-left-radius: 80%;
+}
+
+#radial4 {
+opacity: 0.5;
+font-size: 24px;
+width:  800px;
+height: 600px;
+position: absolute; top: 20px; left: 0px;
+
+background: -webkit-gradient(
+  radial, 300 50%, 20, 100 25%, 40, from(red), 
+  color-stop(0.05, orange), color-stop(0.4, yellow), 
+  color-stop(0.6, green), color-stop(0.9, blue),
+  to(#fff)
+ );
+-webkit-background-size: 100% 33%;
+
+background-image: -webkit-gradient(linear, right top, left bottom, 
+                   from(yellow), 
+                   color-stop(25%, yellow), 
+                   color-stop(25%, red), 
+                   color-stop(50%, blue),
+                   color-stop(50%, yellow), 
+                   color-stop(75%, blue),
+                   color-stop(75%, red), 
+                   to(red));
+-webkit-background-size: 20px;
+-webkit-animation-name: lowerRight;
+-webkit-animation-duration: 6s;
+-webkit-border-top-right-radius: 80%;
+-webkit-border-bottom-left-radius: 80%;
+}
+
+#radial33 {
+  top:50px;
+  left:50px;
+  border-top:32px solid #660000;
+  border-bottom:32px solid #6600000
+  border-left:20px solid #cc0000;
+  border-right:20px solid #0000f8;
+  margin: 4px 2px 4px 6px;
+  padding: 4px 2px 4px 6px;
+  border-style: double;
+  background-clip: content-box;
+  outline: #FFFF00 solid thick;
+clip: rect(0px,250px,150px,100px);
+
+opacity: 0.5;
+font-size: 24px;
+width:  100px;
+height: 100px;
+position: float; top: 150px; left: 50px;
+
+background: -webkit-gradient(
+  radial, 300 30%, 160, 250 25%, 80, from(red), 
+  color-stop(0.05, orange), color-stop(0.4, yellow), 
+  color-stop(0.6, green), color-stop(0.8, blue),
+  to(#fff)
+ );
+-webkit-background-size: 100% 25%;
+-webkit-box-shadow:  0px 0px 8px #000;
+-webkit-animation-name: lowerLeft;
+-webkit-animation-duration: 6s;
+-webkit-border-top-right-radius: 80%;
+-webkit-border-bottom-left-radius: 80%;
+-webkit-transform : scale(5.5) rotate(135deg);
+-transform : scale(5.5) rotate(135deg);
+}
+
+#radial44 {
+  border-top:32px dashed #000066;
+  border-bottom:32px dashed #000066;
+  border-left:20px solid #cc0000;
+  border-right:20px solid #0000f8;
+  margin: 4px 2px 4px 6px;
+  padding: 4px 2px 4px 6px;
+  border-style: double;
+  background-clip: content-box;
+  clip: rect(0px,150px,150px,0px);
+  border-top-style: groove;
+  outline: #FF0000 dashed thick;
+
+opacity: 0.5;
+font-size: 24px;
+width:  100px;
+height: 100px;
+position: float; top: 150px; left: 50px;
+
+background: -webkit-gradient(
+  radial, 300 50%, 20, 100 25%, 40, from(red), 
+  color-stop(0.05, orange), color-stop(0.4, yellow), 
+  color-stop(0.6, green), color-stop(0.9, blue),
+  to(#fff)
+ );
+-webkit-background-size: 100% 33%;
+
+background-image: -webkit-gradient(linear, right top, left bottom, 
+                   from(yellow), 
+                   color-stop(25%, yellow), 
+                   color-stop(25%, red), 
+                   color-stop(50%, blue),
+                   color-stop(50%, yellow), 
+                   color-stop(75%, blue),
+                   color-stop(75%, red), 
+                   to(red));
+-webkit-background-size: 20px;
+-webkit-animation-name: lowerRight;
+-webkit-animation-duration: 6s;
+-webkit-border-top-right-radius: 80%;
+-webkit-border-bottom-left-radius: 80%;
+-webkit-transform : scale(4) rotate(-145deg);
+-transform : scale(4) rotate(-145deg);
+}
+
+#outer33 {
+font-size: 24px;
+width:  400px;
+height: 400px;
+position: absolute; top: 0px; left: 100px;
+
+-webkit-border-radius: 100%;
+border-radius: 100%;
+-webkit-transform : scale(2.0, 3.5) rotate(-225deg);
+-transform : scale(2.0, 3.5) rotate(-225deg);
+overflow: hidden;
+}
+

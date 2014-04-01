@@ -1,0 +1,223 @@
+#outer {
+position: relative; top: 10px; left: 0px;
+}
+
+@-webkit-keyframes lowerLeft {
+   0% {
+      -webkit-transform: matrix(1.5, 0.5,  0.0, 1.5, 0, 0) 
+                         matrix(1.0, 0.0,  1.0, 1.0, 0, 0);
+   }
+   10% {
+      -webkit-transform: translate3d(50px,50px,50px) rotate3d(1,9,4,-180deg) skew(-15deg,0) scale3d(1.25, 1.25, 1.25);
+   }
+   20% {
+      -webkit-transform: matrix(1.0, 1.5, -0.5, 1.0, 0, 0) 
+                         matrix(0.5, 0.5,  0.5, 0.5, 0, 0);
+   }
+   30% {
+      -webkit-transform: perspective(200px) rotate3d(8,5,2,-180deg) skew(-15deg,0) scale3d(1.25, 1.25, 1.25);
+   }
+   40% {
+      -webkit-transform: matrix(1.5, 0.0,  0.5, 0.5, 0, 0) 
+                         matrix(1.0, 1.5, -0.5, 1.0, 0, 0);
+   }
+   50% {
+      -webkit-transform: translate3d(250px,250px,250px) rotate3d(5,-2,7,-120deg) skew(-65deg,0) scale3d(0.5, 0.5, 0.5);
+   }
+   60% {
+      -webkit-transform: matrix(0.25,1.0,  1.5, 0.25, 0, 0) 
+                         matrix(2.0, 0.5, -0.5, 2.0, 0, 0);
+   }
+   80% {
+      -webkit-transform: matrix(1.5, 0.0,  0.0, 1.5, 0, 0) 
+                         matrix(3.0, 1.5,  1.0, 3.0, 0, 0);
+   }
+   90% {
+      -webkit-transform: matrix(2.0, 0.5,  1.0, 3.0, 0, 0) 
+                         matrix(1.5, 0.0,  0.5, 2.5, 0, 0);
+   }
+   100% {
+      -webkit-transform: matrix(1.0, 0.0,  0.0, 1.0, 0, 0)
+                         matrix(1.0, 0.5,  1.0, 1.5, 0, 0);
+   }
+}
+
+#radial1 {
+opacity: 0.5;
+font-size: 24px;
+  top:50px;
+  left:50px;
+  border-top:32px solid #660000;
+  border-bottom:32px solid #6600000
+  border-left:20px solid #cc0000;
+  border-right:20px solid #0000f8;
+  margin: 4px 2px 4px 6px;
+  padding: 4px 2px 4px 6px;
+  border-style: double;
+  background-clip: content-box;
+  outline: #FFFF00 solid thick;
+clip: rect(0px,250px,150px,100px);
+
+background: -webkit-gradient(
+  radial, 400 25%, 20, 100 25%, 40, from(red), 
+  color-stop(0.05, orange), color-stop(0.4, yellow), 
+  color-stop(0.6, red), color-stop(0.9, blue),
+  to(#fff)
+ );
+-webkit-animation-name: lowerLeft;
+-webkit-animation-duration: 30s;
+-webkit-border-top-left-radius: 100%;
+-webkit-border-bottom-right-radius: 100%;
+}
+
+#radial2 {
+opacity: 0.5;
+font-size: 24px;
+  top:50px;
+  left:50px;
+  border-top:32px solid #660000;
+  border-bottom:32px solid #6600000
+  border-left:20px solid #cc0000;
+  border-right:20px solid #0000f8;
+  margin: 4px 2px 4px 6px;
+  padding: 4px 2px 4px 6px;
+  border-style: double;
+  background-clip: content-box;
+  outline: #FFFF00 solid thick;
+clip: rect(0px,450px,150px,100px);
+
+background: -webkit-gradient(
+  radial, 300 25%, 40, 100 25%, 20, from(red), 
+  color-stop(0.05, orange), color-stop(0.4, yellow), 
+  color-stop(0.6, red), color-stop(0.9, blue),
+  to(#fff)
+ );
+-webkit-animation-name: lowerLeft;
+-webkit-animation-duration: 30s;
+-webkit-border-top-right-radius: 100%;
+-webkit-border-bottom-right-radius: 100%;
+}
+
+#radial3 {
+opacity: 0.5;
+font-size: 24px;
+width:  600px;
+height: 600px;
+position: absolute; top: 0px; left: 0px;
+
+background: -webkit-gradient(
+  radial, 300 30%, 160, 250 25%, 80, from(red), 
+  color-stop(0.05, orange), color-stop(0.4, yellow), 
+  color-stop(0.6, green), color-stop(0.8, blue),
+  to(#fff)
+ );
+-webkit-box-shadow:  0px 0px 8px #000;
+
+-webkit-transform : scale(2) skew(-20deg, -30deg);
+-transform : scale(2) skew(-20deg, -30deg);
+-webkit-animation-name: lowerLeft;
+-webkit-animation-duration: 30s;
+-webkit-border-top-right-radius: 100%;
+-webkit-border-bottom-right-radius: 100%;
+}
+
+#radial4 {
+opacity: 0.5;
+font-size: 24px;
+width:  600px;
+height: 600px;
+position: absolute; top: 20px; left: 0px;
+
+background: -webkit-gradient(
+  radial, 300 50%, 20, 100 25%, 40, from(red), 
+  color-stop(0.05, orange), color-stop(0.4, yellow), 
+  color-stop(0.6, green), color-stop(0.9, blue),
+  to(#fff)
+ );
+
+background-image: -webkit-gradient(linear, right top, left bottom, 
+                   from(yellow), 
+                   color-stop(25%, yellow), 
+                   color-stop(25%, red), 
+                   color-stop(50%, red),
+                   color-stop(50%, yellow), 
+                   color-stop(75%, yellow),
+                   color-stop(75%, red), 
+                   to(red));
+-webkit-background-size: 10px;
+-webkit-animation-name: lowerLeft;
+-webkit-animation-duration: 30s;
+-webkit-border-top-left-radius: 100%;
+-webkit-border-bottom-right-radius: 100%;
+}
+
+#radial33 {
+opacity: 0.5;
+font-size: 24px;
+width:  100px;
+height: 100px;
+position: float; top: 150px; left: 50px;
+
+background: -webkit-gradient(
+  radial, 300 30%, 160, 250 25%, 80, from(red), 
+  color-stop(0.05, orange), color-stop(0.4, yellow), 
+  color-stop(0.6, green), color-stop(0.8, blue),
+  to(#fff)
+ );
+-webkit-box-shadow:  0px 0px 8px #000;
+
+-webkit-transform : scale(2) skew(-20deg, -30deg);
+-transform : scale(2) skew(-20deg, -30deg);
+-webkit-animation-name: lowerLeft;
+-webkit-animation-duration: 30s;
+-webkit-border-top-right-radius: 100%;
+-webkit-border-bottom-right-radius: 100%;
+-webkit-transform : scale(5.5) rotate(45deg);
+-transform : scale(5.5) rotate(45deg);
+}
+
+#radial44 {
+opacity: 0.5;
+font-size: 24px;
+width:  100px;
+height: 100px;
+position: float; top: 150px; left: 50px;
+
+background: -webkit-gradient(
+  radial, 300 50%, 20, 100 25%, 40, from(red), 
+  color-stop(0.05, orange), color-stop(0.4, yellow), 
+  color-stop(0.6, green), color-stop(0.9, blue),
+  to(#fff)
+ );
+
+background-image: -webkit-gradient(linear, right top, left bottom, 
+                   from(yellow), 
+                   color-stop(25%, yellow), 
+                   color-stop(25%, red), 
+                   color-stop(50%, red),
+                   color-stop(50%, yellow), 
+                   color-stop(75%, yellow),
+                   color-stop(75%, red), 
+                   to(red));
+-webkit-background-size: 10px;
+-webkit-animation-name: lowerLeft;
+-webkit-animation-duration: 30s;
+-webkit-border-top-left-radius: 100%;
+-webkit-border-bottom-right-radius: 100%;
+-webkit-transform : scale(4) rotate(-145deg);
+-transform : scale(4) rotate(-145deg);
+}
+
+#outer33 {
+font-size: 24px;
+width:  450px;
+height: 450px;
+position: absolute; top: 50px; left: 150px;
+
+-webkit-border-radius: 100%;
+border-radius: 100%;
+-webkit-transform : scale(2.0, 0.5) rotate(45deg);
+-transform : scale(2.0, 0.5) rotate(45deg);
+overflow: hidden;
+}
+

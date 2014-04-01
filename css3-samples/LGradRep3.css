@@ -1,0 +1,108 @@
+#outer {
+position: relative; top: 10px; left: 0px;
+}
+
+#linear1 {
+font-size: 24px;
+width:  400px;
+height: 250px;
+
+position: relative; top: 0px; left: 0px;
+
+background-image: -webkit-gradient(linear, 100% 0%, 0% 100%, 
+                                   from(#f00), 
+                                   color-stop(0.2, orange), 
+                                   color-stop(0.4, yellow), 
+                                   color-stop(0.6, blue),
+                                   color-stop(0.8, green), 
+                                   to(#00f));
+
+background-image: -gradient(linear, 100% 0%, 0% 100%, 
+                            from(#f00), 
+                            color-stop(0.2, orange), 
+                            color-stop(0.4, yellow), 
+                            color-stop(0.6, blue),
+                            color-stop(0.8, green), 
+                                   to(#00f));
+
+-webkit-background-size: 100% 33%;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+-webkit-box-shadow:  0px 0px 20px #00f;
+}
+
+#linear2 {
+font-size: 24px;
+width:  400px;
+height: 250px;
+position: absolute; top: 0px; left: 400px;
+
+background-image: -webkit-gradient(linear, 0% 100%, 100% 0%, 
+                                   from(#f00), 
+                                   color-stop(0.4, yellow), 
+                                   to(#00f));
+
+background-image: -gradient(linear, 0% 100%, 100% 0%, 
+                                   from(#f00), 
+                                   color-stop(0.4, yellow), 
+                                   to(#00f));
+
+-webkit-background-size: 100% 50%;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+-webkit-box-shadow:  0px 0px 20px #00f;
+}
+
+#linear3 {
+font-size: 24px;
+width:  400px;
+height: 250px;
+position: absolute; top: 250px; left: 0px;
+
+background-image: -webkit-gradient(linear, 100% 0%, 0% 100%, 
+                                   from(#f00), 
+                                   color-stop(0.6, green), 
+                                   color-stop(0.8, blue),
+                                   to(#00f));
+
+background-image: -gradient(linear, 100% 0%, 0% 100%, 
+                                   from(#f00), 
+                                   color-stop(0.6, green), 
+                                   color-stop(0.8, blue),
+                                   to(#00f));
+
+-webkit-background-size: 100% 25%;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+-webkit-box-shadow:  0px 0px 20px #00f;
+}
+
+#linear4 {
+font-size: 24px;
+width:  400px;
+height: 250px;
+position: absolute; top: 250px; left: 400px;
+
+background-image: -webkit-gradient(linear, 0% 100%, 100% 0%, 
+                                   from(#f00), 
+                                   color-stop(0.2, orange), 
+                                   color-stop(0.4, yellow), 
+                                   color-stop(0.6, green), 
+                                   color-stop(0.8, blue),
+                                   to(#00f));
+
+background-image: -gradient(linear, 0% 100%, 100% 0%, 
+                            from(#f00), 
+                            color-stop(0.2, orange), 
+                            color-stop(0.4, yellow), 
+                            color-stop(0.6, green), 
+                            color-stop(0.8, blue),
+                            to(#fff));
+
+-webkit-background-size: 100% 33%;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+
+-webkit-box-shadow:  0px 0px 20px #00f;
+}
+

@@ -1,0 +1,65 @@
+#outer {
+position: relative; top: 10px; left: 0px;
+}
+
+#radial1 {
+font-size: 24px;
+width:  300px;
+height: 300px;
+position: absolute; top: 300px; left: 300px;
+
+background: -webkit-gradient(
+  radial, 500 40%, 0, 301 25%, 360, from(red), 
+  color-stop(0.05, orange), color-stop(0.4, yellow), 
+  color-stop(0.6, green), color-stop(0.8, blue),
+  to(#fff)
+ );
+-webkit-background-size: 50% 33%;
+}
+
+#radial2 {
+font-size: 24px;
+width:  500px;
+height: 500px;
+position: absolute; top: 100px; left: 100px;
+
+background: -webkit-gradient(
+  radial, 500 40%, 0, 301 25%, 360, from(red), 
+  color-stop(0.05, orange), color-stop(0.4, yellow), 
+  color-stop(0.6, green), color-stop(0.8, blue),
+  to(#fff)
+ );
+-webkit-background-size: 50% 33%;
+}
+
+#radial3 {
+font-size: 24px;
+width:  600px;
+height: 600px;
+position: absolute; top: 0px; left: 0px;
+
+background: -webkit-gradient(
+  radial, 500 40%, 0, 301 25%, 360, from(red), 
+  color-stop(0.05, orange), color-stop(0.4, yellow), 
+  color-stop(0.6, green), color-stop(0.8, blue),
+  to(#fff)
+ );
+-webkit-background-size: 50% 33%;
+-webkit-box-shadow:  0px 0px 8px #000;
+}
+
+#radial4 {
+font-size: 24px;
+width:  400px;
+height: 400px;
+position: absolute; top: 200px; left: 200px;
+
+background: -webkit-gradient(
+  radial, 500 40%, 0, 301 25%, 360, from(red), 
+  color-stop(0.05, orange), color-stop(0.4, yellow), 
+  color-stop(0.6, green), color-stop(0.8, blue),
+  to(#fff)
+ );
+-webkit-background-size: 50% 33%;
+}
+

@@ -1,0 +1,143 @@
+#outer {
+position: relative; top: 10px; left: 0px;
+}
+
+/* define animation effects */
+@-webkit-keyframes upperLeft {
+   0% {
+      -webkit-transform: translate3d(50px,50px,50px) rotate(-180deg) skew(-15deg,0) scale3d(0.25, 0.25, 0.25);
+   }
+   50% {
+      -webkit-transform: translate3d(0px,0px,0px) rotate(-60deg) skew(-15deg,0) scale3d(0.75, 0.75, 0.75);
+   }
+   75% {
+      -webkit-transform: translate3d(250px,250px,250px) rotate(-120deg) skew(-25deg,0) scale3d(0.5, 0.5, 0.5);
+   }
+   100% {
+      -webkit-transform: translate3d(0px,0px,0px) rotate(0) skew(0,0) scale3d(1.0, 1.0, 1.0);
+   }
+}
+
+@-webkit-keyframes lowerLeft {
+   0% {
+      -webkit-transform: translate3d(50px,50px,50px) rotate(-180deg) skew(-15deg,0) scale3d(0.25, 0.25, 0.25);
+   }
+   50% {
+      -webkit-transform: translate3d(0px,0px,0px) rotate(-60deg) skew(-15deg,0) scale3d(0.75, 0.75, 0.75);
+   }
+   75% {
+      -webkit-transform: translate3d(250px,250px,250px) rotate(-120deg) skew(-25deg,0) scale3d(0.5, 0.5, 0.5);
+   }
+   100% {
+      -webkit-transform: translate3d(0px,0px,0px) rotate(0) skew(0,0) scale3d(1.0, 1.0, 1.0);
+   }
+}
+
+@-webkit-keyframes upperRight {
+   0% {
+      -webkit-transform: translate3d(50px,50px,50px) rotate(-180deg) skew(-15deg,0) scale3d(0.25, 0.25, 0.25);
+   }
+   50% {
+      -webkit-transform: translate3d(0px,0px,0px) rotate(-60deg) skew(-15deg,0) scale3d(0.75, 0.75, 0.75);
+   }
+   75% {
+      -webkit-transform: translate3d(250px,250px,250px) rotate(-120deg) skew(-25deg,0) scale3d(0.5, 0.5, 0.5);
+   }
+   100% {
+      -webkit-transform: translate3d(0px,0px,0px) rotate(0) skew(0,0) scale3d(1.0, 1.0, 1.0);
+   }
+}
+ 
+@-webkit-keyframes lowerRight {
+   0% {
+      -webkit-transform: translate3d(50px,50px,50px) rotate(-180deg) skew(-15deg,0) scale3d(0.25, 0.25, 0.25);
+   }
+   50% {
+      -webkit-transform: translate3d(0px,0px,0px) rotate(-60deg) skew(-15deg,0) scale3d(0.75, 0.75, 0.75);
+   }
+   75% {
+      -webkit-transform: translate3d(250px,250px,250px) rotate(-120deg) skew(-25deg,0) scale3d(0.5, 0.5, 0.5);
+   }
+   100% {
+      -webkit-transform: translate3d(0px,0px,0px) rotate(0) skew(0,0) scale3d(1.0, 1.0, 1.0);
+   }
+}
+
+#linear1 {
+opacity: 0.9;
+font-size: 24px;
+width:  800px;
+height: 500px;
+
+position: relative; top: 0px; left: 0px;
+
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#fff), to(#f00));
+background-image: -gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#fff), to(#f00));
+-webkit-border-radius: 4px;
+border-radius: 4px;
+-webkit-transform : scale(2) skew(-10deg, -30deg);
+-transform : scale(2) skew(-10deg, -30deg);
+-webkit-animation-name: upperLeft;
+-webkit-animation-duration: 6s;
+}
+
+#linear2 {
+opacity: 0.5;
+font-size: 24px;
+width:  400px;
+height: 250px;
+position: absolute; top: 0px; left: 400px;
+
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#f00), to(#00f));
+background-image: -gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#f00), to(#00f));
+-webkit-border-radius: 4px;
+border-radius: 4px;
+-webkit-box-reflect: left 15px;
+-box-reflect: left 15px;
+-webkit-animation-name: upperRight;
+-webkit-animation-duration: 6s;
+}
+
+#linear3 {
+opacity: 0.5;
+font-size: 24px;
+width:  400px;
+height: 250px;
+
+position: absolute; top: 250px; left: 0px;
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#f00), to(#00f));
+background-image: -gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#f00), to(#00f));
+-webkit-border-radius: 4px;
+border-radius: 4px;
+-webkit-transform : scale(1.5) skew(20deg, 30deg);
+-transform : scale(1.5) skew(30deg, 30deg);
+-webkit-animation-name: lowerLeft;
+-webkit-animation-duration: 6s;
+}
+
+#linear4 {
+opacity: 0.5;
+font-size: 24px;
+width:  400px;
+height: 250px;
+position: absolute; top: 250px; left: 400px;
+
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#ff0), to(#00f));
+background-image: -gradient(linear, 0% 0%, 0% 100%, 
+                                   from(#ff0), to(#00f));
+
+-webkit-border-radius: 4px;
+border-radius: 4px;
+-webkit-box-reflect: right 15px;
+-box-reflect: right 15px;
+-webkit-animation-name: lowerRight;
+-webkit-animation-duration: 6s;
+}
+

@@ -1,0 +1,69 @@
+#outer {
+position: relative; top: 10px; left: 0px;
+}
+
+#radial1 {
+opacity: 0.5;
+font-size: 24px;
+width:  600px;
+height: 600px;
+position: absolute; top: 0px; left: 0px;
+-webkit-box-shadow:  50px 50px 50px #000;
+
+background: -webkit-gradient(
+  radial, 400 25%, 20, 100 25%, 40, from(red), 
+  color-stop(0.05, orange), color-stop(0.4, yellow), 
+  color-stop(0.6, red), color-stop(0.9, blue),
+  to(#fff)
+ );
+-webkit-border-image: url(Cassandra4.jpg) 25 25 25 25 stretch stretch;
+}
+
+#radial2 {
+opacity: 0.5;
+font-size: 24px;
+width:  300px;
+height: 500px;
+position: absolute; top: 0px; left: 300px;
+-webkit-box-shadow:  20px 20px 20px #00f;
+
+background: -webkit-gradient(
+  radial, 300 25%, 40, 100 25%, 20, from(red), 
+  color-stop(0.05, orange), color-stop(0.4, yellow), 
+  color-stop(0.6, red), color-stop(0.9, blue),
+  to(#fff)
+ );
+}
+
+#radial3 {
+opacity: 0.5;
+font-size: 24px;
+width:  600px;
+height: 500px;
+position: absolute; top: 0px; left: 0px;
+
+background: -webkit-gradient(
+  radial, 300 30%, 160, 150 25%, 80, from(red), 
+  color-stop(0.05, orange), color-stop(0.4, yellow), 
+  color-stop(0.6, green), color-stop(0.8, blue),
+  to(#fff)
+ );
+-webkit-box-shadow:  20px 20px 20px #000;
+}
+
+#radial4 {
+opacity: 0.5;
+font-size: 24px;
+width:  300px;
+height: 100px;
+position: absolute; top: 400px; left: 0px;
+-webkit-box-shadow:  20px 20px 20px #f00;
+
+background: -webkit-gradient(
+  radial, 400 25%, 20, 100 25%, 40, from(red), 
+  color-stop(0.05, orange), color-stop(0.4, yellow), 
+  color-stop(0.6, red), color-stop(0.7, blue),
+  to(#fff)
+ );
+}
+

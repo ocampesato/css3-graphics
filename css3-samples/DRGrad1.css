@@ -1,0 +1,68 @@
+#outer {
+position: relative; top: 10px; left: 0px;
+}
+
+#radial1 {
+font-size: 24px;
+width:  250px;
+height: 250px;
+position: relative; top: 0px; left: 0px;
+
+background-image: -webkit-gradient(
+                     radial, 
+                     center center, 0, 
+                     center center, 100, 
+                     from(#ff0000), 
+                     to(#0000ff)
+ );
+-webkit-box-shadow:  10px 10px 10px #000;
+}
+
+#radial2 {
+font-size: 24px;
+width:  250px;
+height: 250px;
+position: absolute; top: 0px; left: 250px;
+
+background-image: -webkit-gradient(
+                     radial, 
+                     center center, 25, 
+                     center center, 100, 
+                     from(#0000ff), 
+                     to(#ffff00)
+ );
+-webkit-box-shadow:  10px 10px 10px #000;
+}
+
+#radial3 {
+font-size: 24px;
+width:  250px;
+height: 250px;
+position: relative; top: 0px; left: 0px;
+
+background-image: -webkit-gradient(
+                     radial, 
+                     center center, 75, 
+                     center center, 100, 
+                     from(#ffff00), 
+                     to(#ff0000)
+ );
+-webkit-box-shadow:  10px 10px 10px #000;
+}
+
+#radial4 {
+font-size: 24px;
+width:  250px;
+height: 250px;
+position: absolute; top: 250px; left: 250px;
+
+background-image: -webkit-gradient(
+                     radial, 
+                     center center, 50, 
+                     center center, 100, 
+                     from(#ffff00), 
+                     to(#0000ff)
+ );
+-webkit-box-shadow:  10px 10px 10px #000;
+}
+

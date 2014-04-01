@@ -1,0 +1,187 @@
+#outer {
+position: relative; top: 10px; left: 0px;
+}
+
+#radial1 {
+font-size: 24px;
+width:  150px;
+height: 150px;
+position: relative; top: 0px; left: 0px;
+background-color: red;
+
+-webkit-border-image: url(ball.png) 1 1 1 1 repeat repeat;
+border-image: url(ball.png)         1 1 1 1 repeat repeat;
+
+background-image: -webkit-gradient(
+                     radial, 
+                     center center, 0, 
+                     center center, 100, 
+                     from(#0000ff), 
+                     to(#ff0000)
+ );
+-webkit-box-shadow:  10px 10px 10px #000;
+}
+
+#radial2 {
+font-size: 24px;
+width:  150px;
+height: 150px;
+position: absolute; top: 0px; left: 150px;
+background-color: blue;
+
+-webkit-border-image: url(ball.png) 2 2 2 2 repeat repeat;
+border-image: url(ball.png)         2 2 2 2 repeat repeat;
+
+background-image: -webkit-gradient(
+                     radial, 
+                     center center, 0, 
+                     center center, 100, 
+                     from(#ff0000), 
+                     to(#0000ff)
+ );
+-webkit-box-shadow:  10px 10px 10px #000;
+}
+
+#radial3 {
+opacity: 0.4;
+font-size: 24px;
+width:  150px;
+height: 150px;
+position: absolute; top: 0px; left: 300px;
+background-color: red;
+
+-webkit-border-image: url(ball.png) 3 3 3 3 repeat repeat;
+border-image: url(ball.png)         3 3 3 3 repeat repeat;
+
+background-image: -webkit-gradient(
+                     radial, 
+                     center center, 0, 
+                     center center, 100, 
+                     from(#0000ff), 
+                     to(#ff0000)
+ );
+-webkit-box-shadow:  10px 10px 10px #000;
+}
+
+#radial4 {
+font-size: 24px;
+width:  150px;
+height: 150px;
+position: absolute; top: 150px; left: 0px;
+background-color: blue;
+
+-webkit-border-image: url(ball.png) 4 4 4 4 repeat repeat;
+border-image: url(ball.png)         4 4 4 4 repeat repeat;
+
+background-image: -webkit-gradient(
+                     radial, 
+                     center center, 0, 
+                     center center, 100, 
+                     from(#ff0000), 
+                     to(#0000ff)
+ );
+-webkit-box-shadow:  10px 10px 10px #000;
+}
+
+#radial5 {
+font-size: 24px;
+width:  150px;
+height: 150px;
+position: absolute; top: 150px; left: 150px;
+background-color: red;
+
+-webkit-border-image: url(ball.png) 5 5 5 5 repeat repeat;
+border-image: url(ball.png)         5 5 5 5 repeat repeat;
+
+background-image: -webkit-gradient(
+                     radial, 
+                     center center, 0, 
+                     center center, 100, 
+                     from(#0000ff), 
+                     to(#ff0000)
+ );
+-webkit-box-shadow:  10px 10px 10px #000;
+}
+
+#radial6 {
+opacity: 0.4;
+font-size: 24px;
+width:  150px;
+height: 150px;
+position: absolute; top: 150px; left: 300px;
+background-color: blue;
+
+-webkit-border-image: url(ball.png) 6 6 6 6 repeat repeat;
+border-image: url(ball.png)         6 6 6 6 repeat repeat;
+
+background-image: -webkit-gradient(
+                     radial, 
+                     center center, 0, 
+                     center center, 100, 
+                     from(#ff0000), 
+                     to(#0000ff)
+ );
+-webkit-box-shadow:  10px 10px 10px #000;
+}
+
+#radial7 {
+font-size: 24px;
+width:  150px;
+height: 150px;
+position: absolute; top: 300px; left: 0px;
+background-color: red;
+
+-webkit-border-image: url(ball.png) 7 7 7 7 repeat repeat;
+border-image: url(ball.png)         7 7 7 7 repeat repeat;
+
+background-image: -webkit-gradient(
+                     radial, 
+                     center center, 0, 
+                     center center, 100, 
+                     from(#0000ff), 
+                     to(#ff0000)
+ );
+-webkit-box-shadow:  10px 10px 10px #000;
+}
+
+#radial8 {
+font-size: 24px;
+width:  150px;
+height: 150px;
+position: absolute; top: 300px; left: 150px;
+background-color: blue;
+
+-webkit-border-image: url(ball.png) 8 8 8 8 repeat repeat;
+border-image: url(ball.png)         8 8 8 8 repeat repeat;
+
+background-image: -webkit-gradient(
+                     radial, 
+                     center center, 0, 
+                     center center, 100, 
+                     from(#ff0000), 
+                     to(#0000ff)
+ );
+-webkit-box-shadow:  10px 10px 10px #000;
+}
+
+#radial9 {
+opacity: 0.4;
+font-size: 24px;
+width:  150px;
+height: 150px;
+position: absolute; top: 300px; left: 300px;
+background-color: red;
+
+-webkit-border-image: url(ball.png) 9 9 9 9 repeat repeat;
+border-image: url(ball.png)         9 9 9 9 repeat repeat;
+
+background-image: -webkit-gradient(
+                     radial, 
+                     center center, 0, 
+                     center center, 100, 
+                     from(#0000ff), 
+                     to(#ff0000)
+ );
+-webkit-box-shadow:  10px 10px 10px #000;
+}
+
